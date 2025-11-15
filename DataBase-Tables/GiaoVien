@@ -1,0 +1,9 @@
+CREATE TABLE GiaoVien (
+    MaGV CHAR(10) PRIMARY KEY,
+    HoTen NVARCHAR(100),
+    NgaySinh DATE,
+    GioiTinh NVARCHAR(10),
+    DiaChi NVARCHAR(200),
+    BoMon NVARCHAR(50),
+    NamBatDauDay INT
+);
