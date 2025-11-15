@@ -1,0 +1,6 @@
+create table KetQua(
+   MaHS CHAR(10) FOREIGN KEY REFERENCES HS(MaHS),
+   TenKyThi NVARCHAR(50),
+   GiaiThuong NVARCHAR(50),
+   PRIMARY KEY(MaHS,TenKyThi)
+);
