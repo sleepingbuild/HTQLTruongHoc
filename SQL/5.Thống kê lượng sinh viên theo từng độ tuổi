@@ -1,0 +1,4 @@
+select year(getdate())-year(NgaySinh) as DoTuoi,count(*) as SoLuongHocSinh
+from HocSinh 
+group by year(getdate()) - year(NgaySinh)
+order by DoTuoi;
