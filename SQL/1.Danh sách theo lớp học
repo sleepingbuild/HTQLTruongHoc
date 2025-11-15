@@ -1,0 +1,4 @@
+select l.TenLop,h.MaHS,h.HoTen,h.NgaySinh,h.GioiTinh,h.DiaChi
+from HocSinh h
+join LopHoc as l on l.MaLop = h.MaLop
+order by l.TenLop,h.HoTen;
