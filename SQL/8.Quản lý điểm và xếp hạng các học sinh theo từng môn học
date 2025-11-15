@@ -1,0 +1,10 @@
+select H.HoTen,D.Diem,M.TenMon,
+case
+   when D.Diem >= 8.0 then N'Gioi'
+   when D.Diem >=6.5 and D.Diem <= 7.9 then N'Kha'
+   when D.Diem >= 5.0 and D.Diem <= 6.4 then N'Trung Binh'
+   else N'Yeu'
+end as XepLoai
+from DiemSo D
+join HS as H on D.MaHS = H.MaHS
+join Mon as M on D.MaMon = M.TenMon;
