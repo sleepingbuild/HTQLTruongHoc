@@ -4,5 +4,5 @@ CREATE TABLE HocSinh (
     NgaySinh DATE,
     GioiTinh NVARCHAR(10),
     DiaChi NVARCHAR(200),
-    MaLop CHAR(10) FOREIGN KEY REFERENCES Lop(MaLop)
+    MaLop CHAR(10) FOREIGN KEY REFERENCES LopHoc(MaLop)
 );
