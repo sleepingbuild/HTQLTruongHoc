@@ -1,4 +1,4 @@
-CREATE TABLE GiaoVien (
+CREATE TABLE GV (
     MaGV CHAR(10) PRIMARY KEY,
     HoTen NVARCHAR(100),
     NgaySinh DATE,
