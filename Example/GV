@@ -1,1 +1,12 @@
-
+insert into GV (MaGV, TenGV, NgaySinh, ChuyenMon) values
+('GV01', N'Ngô Việt Anh', '1987-05-10', N'Các hệ quản trị csdl'),
+('GV02', N'Nguyễn Đức An', '1986-03-25', N'Hệ điều hành'),
+('GV03', N'Nguyễn Việt Dũng', '1970-05-15', N'Toán rời rạc'),
+('GV04', N'Vũ Thị Phương', '1990-04-20', N'Kiến trúc máy tính'),
+('GV05', N'Nguyễn Khánh Sơn', '1989-01-14', N'Lập trình Python'),
+('GV06', N'Nguyễn Hữu Giang', '1985-11-10', N'Cơ sở dữ liệu'),
+('GV07', N'Nguyễn Thị Thu Hằng', '1987-12-1', N'Mạng máy tính'),
+('GV08', N'Trần Văn Hưng', '1995-10-03', N'Lập trình C#'),
+('GV09', N'Phạm Văn Tiến', '1990-07-02', N'Cấu trúc dữ liệu và giải thuật'),
+('GV10', N'Đặng Văn Trung', '1989-02-01', N'Đại số thuyết tính');
+ 
