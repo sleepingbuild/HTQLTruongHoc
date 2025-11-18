@@ -1,5 +1,8 @@
 CREATE TABLE MonHoc (
     MaMon CHAR(10) PRIMARY KEY,
-    TenMon NVARCHAR(50),
-    GiaoVienPhuTrach CHAR(10) FOREIGN KEY REFERENCES GiaoVien(MaGV)
+    TenMon NVARCHAR(50), 
+    MaGVPhuTrach CHAR(10), 
+    
+    CONSTRAINT FK_GVPT FOREIGN KEY (MaGVPhuTrach) 
+    REFERENCES GiaoVien(MaGV)
 );
