@@ -1,11 +1,11 @@
 insert into HS (MaHS, TenHS, NgaySinh, MaLop) values
-('01', N'Nguyễn Văn An', '2006-03-20', 'IT1'),
-('02', N'Lê Hoàng Bình', '2006-01-15', 'IT2'),
-('03', N'Trần Văn Chiến', '2006-02-10', 'IT1'),
-('04', N'Phạm Thị Dung', '2006-05-01', 'IT3'),
-('05', N'Đỗ Hoài Phương', '2005-07-13', 'IT2'),
-('06', N'Bùi Văn Giang', '2006-10-19', 'IT1'),
-('07', N'Mai Thị Huệ', '2006-06-06', 'IT3'),
-('08', N'Bùi Văn Khôi', '2005-04-30', 'IT1'),
-('09', N'Đặng Thị Linh', '2006-08-03', 'IT1'),
-('10', N'Nguyễn Phương Thảo', '2006-11-06', 'IT2');
+('HS01', N'Nguyễn Văn An', '2006-03-20', 'IT1'),
+('HS02', N'Lê Hoàng Bình', '2006-01-15', 'IT2'),
+('HS03', N'Trần Văn Chiến', '2006-02-10', 'IT1'),
+('HS04', N'Phạm Thị Dung', '2006-05-01', 'IT3'),
+('HS05', N'Đỗ Hoài Phương', '2005-07-13', 'IT4'),
+('HS06', N'Bùi Văn Giang', '2006-10-19', 'IT1'),
+('HS07', N'Mai Thị Huệ', '2006-06-06', 'IT3'),
+('HS08', N'Bùi Văn Khôi', '2005-04-30', 'IT1'),
+('HS09', N'Đặng Thị Linh', '2006-08-03', 'IT4'),
+('HS10', N'Nguyễn Phương Thảo', '2006-11-06', 'IT2');
