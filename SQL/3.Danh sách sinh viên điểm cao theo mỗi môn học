@@ -1,6 +1,18 @@
-select M.TenMon,D.Diem,H.HoTen
-from Diem D
-join HocSinh as H on D.MaHS = H.MaHS
-join MonHoc as M on D.MaMon = M.MaMon
-where D.Diem >= 8.5
-order by M.TenMon,D.Diem desc;
+CREATE PROCEDURE sp_TimHocSinhDiemCaoNhat
+    @MaMon CHAR(5)
+AS
+BEGIN
+    WITH XepHang AS (
+        SELECT 
+            h.HoTen, 
+            l.TenLop, 
+            d.DiemSo,
+            DENSE_RANK() OVER (ORDER BY d.DiemSo DESC) as Rank
+        FROM BangDiem d
+        JOIN HocSinh h ON d.MaHS = h.MaHS
+        JOIN LopHoc l ON h.MaLop = l.MaLop
+        WHERE d.MaMon = @MaMon
+    )
+    SELECT * FROM XepHang WHERE Rank = 1; -- Chỉ lấy hạng 1
+END;
+GO
