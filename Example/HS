@@ -1,1 +1,11 @@
-
+insert into HocSinh (MaHS, HoTen, NgaySinh, GioiTinh,DiaChi, MaLop) values
+('HS01', N'Nguyễn Văn An', '2006-03-20', N'Nam', N'123 Quang Trung, Hà Đông, Hà Nội', 'IT1'),
+('HS02', N'Lê Hoàng Bình', '2006-01-15', N'Nam', N'456 Trần Hưng Đạo, Q5, TPHCM','IT2'),
+('HS03', N'Trần Văn Chiến', '2006-02-10', N'Nam', N'789 Hai Bà Trưng, Q3, TPHCM', 'IT1'),
+('HS04', N'Phạm Thị Dung', '2006-05-01', N'Nữ', N'202 Nguyễn Trãi, Q5, Hà Nội', 'IT3'),
+('HS05', N'Đỗ Hoài Phương', '2005-07-13', N'Nữ', N'404 Phan Đình Phùng, Q Phú Nhuận', 'IT4'),
+('HS06', N'Bùi Văn Giang', '2006-10-19', N'Nữ', N'606 Điện Biên Phủ, Q Bình Thạnh', 'IT1'),
+('HS07', N'Mai Thị Huệ', '2006-06-06', N'Nữ', N'707 Nam Kỳ Khởi Nghĩa, Q3, TPHCM', 'IT3'),
+('HS08', N'Bùi Văn Khôi', '2005-04-30', N'Nam', N'101 Võ Thị Sáu, Q10, TPHCM', 'IT1'),
+('HS09', N'Đặng Thị Linh', '2006-08-03', N'Nữ', N'303 Cách Mạng T8, Q3, TPHCM', 'IT4'),
+('HS10', N'Nguyễn Phương Thảo', '2006-11-06', N'Nữ', N'505 Lý Tự Trọng, Q1, TPHCM', 'IT2');
