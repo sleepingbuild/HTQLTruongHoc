@@ -1,4 +1,11 @@
-select year(getdate())-year(NgaySinh) as DoTuoi,count(*) as SoLuongHocSinh
-from HocSinh 
-group by year(getdate()) - year(NgaySinh)
-order by DoTuoi;
+CREATE PROCEDURE sp_ThongKeDoTuoi
+AS
+BEGIN
+    SELECT 
+        dbo.fn_TinhTuoi(NgaySinh) AS Tuoi, 
+        COUNT(*) AS SoLuong 
+    FROM HocSinh
+    GROUP BY dbo.fn_TinhTuoi(NgaySinh)
+    ORDER BY Tuoi;
+END;
+GO
