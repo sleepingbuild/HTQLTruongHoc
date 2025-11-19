@@ -1,6 +1,21 @@
-select M.TenMon,D.Diem,H.HoTen
-from Diem D
-join HocSinh as H on D.MaHS = H.MaHS
-join MonHoc as M on D.MaMon = M.MaMon
-where D.Diem >= 8.5
-order by M.TenMon,D.Diem desc;
+CREATE PROCEDURE sp_DanhSachHocSinhDiemCao
+    @MaMon CHAR(5),
+    @DiemChuan FLOAT = 8.5 -- Mặc định lấy từ 8.5 trở lên, có thể thay đổi khi gọi
+AS
+BEGIN
+    SELECT 
+        h.MaHS,
+        h.HoTen,
+        l.TenLop,
+        d.DiemSo,
+        CASE 
+            WHEN d.DiemSo >= 9.0 THEN N'Xuất sắc'
+            ELSE N'Giỏi'
+        END AS XepLoai
+    FROM BangDiem d
+    JOIN HocSinh h ON d.MaHS = h.MaHS
+    JOIN LopHoc l ON h.MaLop = l.MaLop
+    WHERE d.MaMon = @MaMon AND d.DiemSo >= @DiemChuan
+    ORDER BY d.DiemSo DESC; -- Người điểm cao xếp trên
+END;
+GO
