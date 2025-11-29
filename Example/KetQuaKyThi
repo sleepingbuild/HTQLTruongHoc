@@ -1,1 +1,7 @@
 
+insert into KetQuaKyThi (MaHS, TenKyThi, GiaiThuong) values
+('HS01', N'Olympic Tin học sinh viên', N'Giải Nhất'),
+('HS02', N'Cuộc thi Ý tưởng khởi nghiệp', N'Giải Nhì'),
+('HS04', N'Giao lưu Văn hóa Quốc tế', N'Chứng nhận tham gia'),
+('HS06', N'Giải Thuyết trình Tiếng Anh', N'Giải Ba'),
+('HS07', N'Giải Toán học sinh viên', N'Giải Khuyến khích');
