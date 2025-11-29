@@ -1,1 +1,12 @@
 
+insert into MonHoc (MaMon, TenMon, MaGVPhuTrach) values
+('MH01', N'Cấu trúc dữ liệu và giải thuật', 'GV09'),
+('MH02', N'Đại số tuyến tính', 'GV10'),
+('MH03', N'Cơ sở dữ liệu', 'GV06'),
+('MH04', N'Hệ điều hành', 'GV02'),
+('MH05', N'Lập trình C#', 'GV08'),
+('MH06', N'Mạng máy tính', 'GV07'),
+('MH07', N'Toán rời rạc', 'GV03'),
+('MH08', N'Lập trình Python', 'GV05'),
+('MH09', N'Kiến trúc máy tính', 'GV04'),
+('MH10', N'Các hệ quản trị csdl', 'GV01');
